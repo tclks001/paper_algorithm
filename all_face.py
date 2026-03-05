@@ -183,17 +183,6 @@ def dedup(samples):
     """
     return list(set(map(tuple, map(lambda x: (round(x[0], 4), round(x[1], 4), round(x[2], 4)), samples))))
 
-def sort_samples(samples):
-    """
-    球面坐标分层排序
-    优先找当前节点右侧的点，如果右侧没点就找下面的点
-    以[0,1,phi]为南极，[0,-1,-phi]为北极
-    其连线为中轴线
-    从一个点找它右侧点的方法为：
-    
-    """
-
-
 # -
 # 主函数
 # -
