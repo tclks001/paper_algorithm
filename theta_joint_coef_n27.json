@@ -1,0 +1,50 @@
+{
+  "variant": "joint_theta_C",
+  "family": "exp",
+  "xvar": "d_e",
+  "a": 0.004174195780986754,
+  "shape": [
+    3.055824843898124
+  ],
+  "m_formula": "m(dev)=a*dev",
+  "theta_formula": "theta=(pi/2)*W(x), x=d_e or dev",
+  "W_forms": {
+    "linear": "clip(1-d/lam,0,1)",
+    "power": "clip(1-d/lam,0,1)^p",
+    "exp": "exp(-d/lam)",
+    "stretched": "exp(-(d/lam)^p)",
+    "cos": "cos((pi/2)*clip(d/lam,0,1))",
+    "linear_dev": "clip(dev/lam,0,1)",
+    "power_dev": "clip(dev/lam,0,1)^p"
+  },
+  "rho_max": 1.496311681019198,
+  "strict_sym_bad": 0,
+  "sym_worst_deg": 5.519545444082253e-13,
+  "mirror_median_deg": 0.0,
+  "edge_checks": [
+    {
+      "signed_mean": 4.801466763864377e-19,
+      "abs_mean": 0.0017062565552165166,
+      "radial_mean": 0.0009859807090148022,
+      "angle_to_edge_deg": 20.60913538501827
+    },
+    {
+      "signed_mean": 7.790767039431554e-18,
+      "abs_mean": 0.00170625655521651,
+      "radial_mean": 0.0009859807090148015,
+      "angle_to_edge_deg": 20.609135385018227
+    },
+    {
+      "signed_mean": 2.323290369611795e-18,
+      "abs_mean": 0.0017062565552165186,
+      "radial_mean": 0.0009859807090148043,
+      "angle_to_edge_deg": 20.60913538501824
+    }
+  ],
+  "baseline": {
+    "P0": 1.5025852719223916,
+    "C_covariant_tangent": 1.496089025393318,
+    "A_pure_radial": 1.492573
+  },
+  "n_points": 7292
+}

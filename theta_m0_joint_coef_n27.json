@@ -1,0 +1,35 @@
+{
+  "variant": "joint_m0_theta_C",
+  "family": "linear",
+  "xvar": "d_e",
+  "m0": 0.11729888043180879,
+  "a": 0.00048212150944043863,
+  "shape": [
+    6.117790696585521
+  ],
+  "m_formula": "m(dev)=m0+a*dev",
+  "theta_formula": "theta=(pi/2)*W(x)",
+  "rho_max": 1.488060171877142,
+  "strict_sym_bad": 0,
+  "sym_worst_deg": 5.494379444473089e-13,
+  "mirror_median_deg": 0.0,
+  "edge_signed_mean": [
+    -2.168404344971009e-18,
+    6.195440985631454e-19,
+    -2.7259940336778397e-18
+  ],
+  "edge_abs_mean": [
+    0.002009454833943287,
+    0.002009454833943286,
+    0.002009454833943289
+  ],
+  "disp_mean_deg": 0.13409127320708053,
+  "disp_max_deg": 0.17407116823456711,
+  "baseline": {
+    "P0": 1.502585272272,
+    "C_covariant_tangent": 1.496089025393318,
+    "A_pure_radial": 1.492573,
+    "joint_no_m0": 1.496311681
+  },
+  "note": "Joint optimization of (m0,a,W) breaks the rho plateau; m0 is reactivated through coupling with the deflection width."
+}
