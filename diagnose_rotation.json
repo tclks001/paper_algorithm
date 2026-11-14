@@ -1,0 +1,8 @@
+{
+  "mirror_median_original": 49.721785399474285,
+  "mirror_median_symmetric": 0.0,
+  "mirror_max_original": 180.0,
+  "mirror_max_symmetric": 90.0,
+  "proj_distortion_median": 0.007958629901385843,
+  "proj_distortion_max": 90.0
+}
