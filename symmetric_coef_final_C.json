@@ -1,0 +1,22 @@
+{
+  "m0": 0.001084940560734758,
+  "a": 0.004132033189163949,
+  "c": 3.1976753744711254e-08,
+  "scale_absorbed": 1.0,
+  "variant": "C_covariant_tangent",
+  "construction": "edge tangent multiplied by odd function sign(angle(p,X)-angle(p,Y)) about edge midpoint, then G120 Reynolds projection",
+  "rho_max": 1.496089025393318,
+  "strict_sym_bad": 0,
+  "mirror_median_deg": 0.0,
+  "edge_signed_mean": [
+    4.0425252431245236e-18,
+    3.345538132240985e-18,
+    1.827655090761279e-18
+  ],
+  "edge_abs_mean": [
+    0.0017061421529846142,
+    0.001706142152984614,
+    0.0017061421529846114
+  ],
+  "note": "This is the CORRECT boundary-aware algorithm: strictly 120-fold symmetric, edge points still glide along edges with sign flipping at midpoints, no circulation."
+}

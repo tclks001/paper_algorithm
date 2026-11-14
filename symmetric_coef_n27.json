@@ -1,0 +1,43 @@
+{
+  "m0": 0.001627410841102137,
+  "a": 0.006198049783745923,
+  "c": 4.796513061706688e-08,
+  "scale_absorbed": 1.5,
+  "source": "A_mixed_reynolds",
+  "m_formula": "m(dev)=m0+a*dev+c*dev^2",
+  "note": "Reynolds G120 projection of the base field; 12 vertices fixed; axis points automatically have zero tangential component",
+  "rho_max": 1.4925726516543487,
+  "strict_sym_bad": 0,
+  "mirror_median_deg": 0.0,
+  "edge_circulation": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "candidates": {
+    "A_mixed_reynolds": {
+      "scale": 1.5,
+      "rho": 1.4925726516543487,
+      "sym_bad": 0,
+      "sym_worst": 5.506041054408827e-13,
+      "mirror": 0.0,
+      "edge": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "B_radial_reynolds": {
+      "scale": 1.2,
+      "rho": 1.4943789790476616,
+      "sym_bad": 0,
+      "sym_worst": 5.514411365869542e-13,
+      "mirror": 0.0,
+      "edge": [
+        0.0010998827418006894,
+        0.0010998827418006907,
+        0.0010998827418006896
+      ]
+    }
+  }
+}
