@@ -1,0 +1,33 @@
+{
+  "A": {
+    "R_lt_2r_count": 120,
+    "tanR_lt_2tanr_count": 0,
+    "mean_R_minus_2r_deg": 0.01455772952799498,
+    "equilateral_R_deg": 1.1547200828702795,
+    "equilateral_2r_deg": 1.1548373480306962
+  },
+  "B": {
+    "vertices": 12,
+    "face_centers": 20,
+    "edge_midpoints": 0,
+    "axis_points": 32,
+    "edge_inner_points": 792,
+    "edge_disp_mean_deg": 0.057827485656067
+  },
+  "C": {
+    "d_e_at_mb_008_deg": 7.036204117099414,
+    "mb_at_d_e_48_deg": 0.03624393414798938
+  },
+  "D": {
+    "P0": 5.527420636317854e-13,
+    "L_unprojected": 0.06407574289324107,
+    "J_unprojected": 0.09670035483065179
+  },
+  "E": {
+    "M_n26": 6762,
+    "lower_n26_deg": 1.5324381813671448,
+    "M_n27": 7292,
+    "lower_n27_deg": 1.4756924030412575,
+    "critical_M_for_1p5": 7057.599194173041
+  }
+}
