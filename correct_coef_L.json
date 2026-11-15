@@ -1,0 +1,34 @@
+{
+  "variant": "correct_radius_scheme_L",
+  "rho_max": 1.4984373481032216,
+  "rho": 1.4984373481032216,
+  "rho_fast": 1.4984373481032216,
+  "params": [
+    0.010587760907555145,
+    0.0011580002061323921
+  ],
+  "param_names": [
+    "m0",
+    "a"
+  ],
+  "strict_sym_bad": 0,
+  "sym_worst_deg": 5.5164117032868e-13,
+  "mirror_median_deg": 0.0,
+  "edge_signed_mean": [
+    -5.8663081832697826e-18,
+    6.0095777560625105e-18,
+    -6.598144649697498e-18
+  ],
+  "unique_points": 7292,
+  "disp_mean_deg": 0.03126691561585112,
+  "disp_max_deg": 0.051696301459967384,
+  "face0": {
+    "phi_std": 0.008143593012900623,
+    "phi_range": 0.03523365429753911,
+    "res_max": 0.021541893388483224,
+    "res_median": 0.009935981347117262
+  },
+  "feasible_le_1p5": true,
+  "gate_all_pass": true,
+  "fast_vs_full_point_diff": 2.220446049250313e-16
+}
