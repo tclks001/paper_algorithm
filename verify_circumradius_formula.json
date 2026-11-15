@@ -1,0 +1,98 @@
+{
+  "date": "2026-11-15",
+  "verdict": "CODE 公式不是球面外接圆半径；GEOM == TODH 才是。CODE = 2r（内切圆半径的两倍），由欧拉型不等式 R >= 2r（等边取等）系统性低估外接圆半径。",
+  "equilateral_check": {
+    "edge_AB": 1.9999999999999472,
+    "edge_AC": 1.9999999999999472,
+    "edge_BC": 1.9999999999999472,
+    "CODE": 1.1548373480306653,
+    "GEOM": 1.1547200828702795,
+    "TODH": 1.1547200828703452
+  },
+  "cases": {
+    "P0 baseline": {
+      "file": "baseline_P0_n27.csv",
+      "n_points": 7292,
+      "n_tri": 14580,
+      "CODE_max": 1.5025852719223916,
+      "GEOM_max": 1.5024188685547208,
+      "TODH_max": 1.5024188685542135,
+      "SAMPLE_max": 1.4961426447893948,
+      "GEOM_TODH_max_abs_diff": 7.540634783254063e-13,
+      "CODE_GEOM_mean_abs_diff": 0.014560332217083083,
+      "CODE_GEOM_max_abs_diff": 0.04442133882250565
+    },
+    "scheme L linear": {
+      "file": "symmetric_points_final_C.csv",
+      "n_points": 7292,
+      "n_tri": 14580,
+      "CODE_max": 1.496089025393318,
+      "GEOM_max": 1.5432584774860971,
+      "TODH_max": 1.543258477486,
+      "SAMPLE_max": 1.522626507509861,
+      "GEOM_TODH_max_abs_diff": 6.585842982076429e-13,
+      "CODE_GEOM_mean_abs_diff": 0.017147808806283568,
+      "CODE_GEOM_max_abs_diff": 0.06259067653860106
+    },
+    "scheme J joint": {
+      "file": "theta_m0_joint_points_n27.csv",
+      "n_points": 7292,
+      "n_tri": 14580,
+      "CODE_max": 1.488060171877142,
+      "GEOM_max": 1.534980893514859,
+      "TODH_max": 1.534980893514601,
+      "SAMPLE_max": 1.521517951809444,
+      "GEOM_TODH_max_abs_diff": 7.087663789206999e-13,
+      "CODE_GEOM_mean_abs_diff": 0.01767240418148313,
+      "CODE_GEOM_max_abs_diff": 0.0668506663469115
+    }
+  },
+  "baseline_by_n": {
+    "27": {
+      "M": 7292,
+      "CODE": 1.5025852719223916,
+      "GEOM": 1.5024188685547208,
+      "meets_1p5": false
+    },
+    "28": {
+      "M": 7842,
+      "CODE": 1.4487733448103062,
+      "GEOM": 1.448626851548654,
+      "meets_1p5": true
+    },
+    "29": {
+      "M": 8412,
+      "CODE": 1.398822878665909,
+      "GEOM": 1.3986144998718133,
+      "meets_1p5": true
+    },
+    "30": {
+      "M": 9002,
+      "CODE": 1.3519493805086125,
+      "GEOM": 1.3518286682062284,
+      "meets_1p5": true
+    }
+  },
+  "affected_scripts": [
+    "compare_constructions.py",
+    "diagnose_theta_insensitivity.py",
+    "diag_max_location.py",
+    "improve_corrected.py",
+    "improve_final.py",
+    "improve_legfix.py",
+    "improve_symmetric_c.py",
+    "optimize_greedy.py",
+    "optimize_radial.py",
+    "optimize_test.py",
+    "optimize_theta_joint.py",
+    "optimize_theta_m0_joint.py",
+    "plot_hypotenuse.py",
+    "plot_joint_effect.py",
+    "verify_symmetric_fix.py",
+    "verify_symmetry.py",
+    "verify_theta_m0_result.py"
+  ],
+  "consequence": "所有 rho_max 数值、热力图/残差统计、以及以 rho_max 为目标的位置拟合优化（方案 L/J 的系数）都基于错误目标，需全面返工重算；第三章 'rho_max<=1.5deg 无盲区' 的结论当前不成立。",
+  "correct_formula": "GEOM: n=normalize((b-a)x(c-a)); R=arccos(|n·a|)。等价 Todhunter: tan R = 2 sin(a/2)sin(b/2)sin(c/2) / sqrt(sin s sin(s-a)sin(s-b)sin(s-c))。",
+  "cross_check": "由独立子代理（无预设结论）首先提出；本脚本用向量几何定义、Todhunter 公式与 Fibonacci 稠密采样三重独立复核。"
+}
